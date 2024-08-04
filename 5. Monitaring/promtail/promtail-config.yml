@@ -12,24 +12,29 @@ scrape_configs:
 
 # local machine logs
 
-- job_name: local
-  static_configs:
-  - targets:
-      - localhost
-    labels:
-      job: varlogs
-      __path__: /var/log/*log
+# - job_name: local
+#   static_configs:
+#   - targets:
+#       - localhost
+#     labels:
+#       job: varlogs
+#       __path__: /var/log/*log
   
 ## docker logs
 
-- job_name: docker 
-  pipeline_stages:
-   - docker: {}
-  static_configs:
-   - labels:
-       job: docker
-       __path__: /var/lib/docker/containers/*/*-json.log
+ - job_name: docker 
+   pipeline_stages:
+    - docker: {}
+   static_configs:
+    - labels:
+        job: docker
+        __path__: /var/lib/docker/containers/*/*-json.log
 
+# - job_name: migrator
+#   static_configs:
+#    - labels:
+#        job: migrator
+#        __path__: /usr/share/SysTools/WorkSpace/*.log
 # syslog target
 
 #- job_name: syslog
