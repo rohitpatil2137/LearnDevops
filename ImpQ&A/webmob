@@ -1,0 +1,26 @@
+
+Introduction: 
+
+1. Docker and its componant
+2. kubernetes and its componant
+3. Services used in azure
+4. firewall 
+5. ports
+6. if configured sql, whats steps you will troubleshoot
+7. deployed the application, not working, and shows 403. 
+8. example.com redirect to example2.com, whats steps to u do. 
+9. jenkins
+10. what is webserver, tomcat, nginx 
+11. how you can trigger pipeline, how you setup the webhook. 
+12. Azure devops, 
+13. Pipeline stages n why
+14. Website is down, how you can troubleshoot. 
+15. VM is created, but not able to access by user. troubleshoot
+16. Jira, 
+17. What is SDLC
+18. How its differe Devops process. 
+19. Azure web App service. 
+20. Given deployment file, and ask to identify the error/wrong with this file. 
+21. Serverless, Azure Function / AWS lanbda
+22. Logs vs matrix
+23. 

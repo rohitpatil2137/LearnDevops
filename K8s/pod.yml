@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name : my-pod-name
+  namespace: my-webapp-group
+  labels:
+    app: todo-app
+spec:
+ containers:
+  - name: todo-app
+    image: rohitraut236/my-app:v1
+    ports:
+    - containerPort: 5000
+    imagePullPolicy: Always
+
+  - name: my-db
+    image: mysql:latest
+    ports: 
+     containerPort: 3600
+    env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: "rootpassword"
+        - name: MYSQL_DATABASE
+          value: "mydatabase" 
+    imagePullPolicy : Always
+
+    

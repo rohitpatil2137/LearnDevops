@@ -1,0 +1,27 @@
+A Kubernetes cluster consists of two types of resources:
+
+The Control Plane coordinates the cluster
+Nodes are the workers that run applications
+
+![alt text](image.png)
+
+
+**In the manifest (YAML or JSON file) for the Kubernetes object you want to create, you'll need to set values for the following fields:** 
+
+**apiVersion** - Which version of the Kubernetes API you're using to create this object
+**kind**  - What kind of object you want to create
+metadata - Data that helps uniquely identify the object, including a name string, UID, and optional namespace
+spec - What state you desire for the object
+
+
+The precise format of the object spec is different for every Kubernetes object, and contains nested fields specific to that object.
+
+
+ConfigMaps
+A ConfigMap is an API object used to store non-confidential data in key-value pairs. Pods can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume.
+
+
+The kubectl command-line tool supports several different ways to create and manage Kubernetes objects.
+
+kubectl basics
+The common format of a   kubectl command is: kubectl action 
