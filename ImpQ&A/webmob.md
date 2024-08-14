@@ -133,3 +133,25 @@ To reduce costs in the cloud:
 - Implement automation to turn off non-essential resources during off-hours.
 - Review and clean up unused resources (e.g., storage, VMs).
 - Leverage cost management tools provided by cloud platforms to monitor and optimize spend.
+
+
+
+
+
+### Another person
+What is docker
+       Docker components
+       Kubernetes architecture
+       Secrets
+       MapConfig
+     Ingress
+       Introduction
+       Aws
+       How to create vm in aws
+       Anisible
+       What is teraform
+  Docker compose
+  How to use image fromone container to another
+ How you can deploy multiple container
+  What is https protocol
+   How we can access the container
