@@ -139,19 +139,19 @@ To reduce costs in the cloud:
 
 
 ### Another person
-What is docker
-       Docker components
-       Kubernetes architecture
-       Secrets
-       MapConfig
-     Ingress
-       Introduction
-       Aws
-       How to create vm in aws
-       Anisible
-       What is teraform
-  Docker compose
-  How to use image fromone container to another
- How you can deploy multiple container
-  What is https protocol
-   How we can access the container
+What is docker,
+       Docker components,
+       Kubernetes architecture,
+       Secrets,
+       MapConfig,
+     Ingress,
+       Introduction,
+       Aws,
+       How to create vm in aws,
+       Anisible,
+       What is teraform,
+  Docker compose,
+  How to use image fromone container to another,
+ How you can deploy multiple container,
+  What is https protocol,
+   How we can access the container,
