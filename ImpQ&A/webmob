@@ -1,4 +1,3 @@
-"""
 # DevOps Engineer Interview Questions and Answers
 
 ### 1. Docker and its Components
@@ -134,4 +133,3 @@ To reduce costs in the cloud:
 - Implement automation to turn off non-essential resources during off-hours.
 - Review and clean up unused resources (e.g., storage, VMs).
 - Leverage cost management tools provided by cloud platforms to monitor and optimize spend.
-"""
