@@ -1,16 +1,16 @@
 terraform {
   required_providers {
     azurerm = {
-      source = "hashicorp/azurerm"
+      source  = "hashicorp/azurerm"
       version = "3.115.0"
     }
   }
 
   backend "azurerm" {
-    resource_group_name = "rg"
+    resource_group_name  = "rg"
     storage_account_name = "stgbhosdike"
-    container_name = "stg-ctr"
-    key = "terraform.tfstate"
+    container_name       = "stg-ctr"
+    key                  = "terraform.tfstate"
   }
 }
 provider "azurerm" {

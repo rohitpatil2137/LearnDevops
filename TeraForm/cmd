@@ -1,0 +1,4 @@
+terraform force-unlock d153e74c-a742-b8d3-ab0f-bfd3a9a22bc9
+ terraform apply
+ terraform init -reconfigure
+ terraform apply
