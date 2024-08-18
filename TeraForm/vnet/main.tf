@@ -109,3 +109,16 @@ resource "azurerm_subnet_route_table_association" "public_subnet_route_table" {
 }
 
 
+
+# Explanation:
+
+# Resource Group: A logical container for the resources.
+# Virtual Network: The VNet with the 10.0.0.0/16 CIDR block.
+# Public Subnet: A subnet with the 10.0.1.0/24 CIDR block.
+# Private Subnet: A subnet with the 10.0.2.0/24 CIDR block.
+# Public IP Address: A static public IP address.
+# Network Security Group (NSG): Contains rules allowing HTTP (port 80) and SSH (port 22) traffic.
+# NSG Association: Associates the NSG with the public subnet.
+# Route Table: A route table for the public subnet.
+# Internet Route: A route directing traffic to the internet.
+# Route Table Association: Associates the route table with the public subnet.
