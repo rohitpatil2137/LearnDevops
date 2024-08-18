@@ -1,0 +1,21 @@
+
+# AWS to Azure Component Mapping
+
+| AWS Component     | Azure Equivalent                 |
+|-------------------|----------------------------------|
+| VPC               | Virtual Network (VNet)           |
+| Public Subnet     | Public Subnet                    |
+| Private Subnet    | Private Subnet                   |
+| EC2 Instance      | Virtual Machine (VM)             |
+| Security Group    | Network Security Group (NSG)     |
+
+_________________________________________________
+
+## Explanation of Terraform Resources:
+
+- **azurerm_virtual_network**: Creates a Virtual Network (VNet).
+- **azurerm_subnet**: Creates a subnet within the VNet.
+- **azurerm_network_security_group**: Configures security rules for network traffic (similar to AWS Security Groups).
+- **azurerm_network_interface**: Attaches the VM to the subnet and assigns a public IP.
+- **azurerm_linux_virtual_machine**: Creates the VM and uses Custom Data to install and start Nginx.
+- **output**: Displays the public IP address of the VM after deployment.
