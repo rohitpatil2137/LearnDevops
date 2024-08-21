@@ -1,0 +1,22 @@
+# Notes on Using Variables in Terraform
+---
+
+## 1. Default Values (`variables.tf`)
+- **Definition:** Set default values for variables in the `variables.tf` file.
+- **Usage:** If no other value is provided, Terraform uses the default value.
+
+## 2. `.tfvars` Files (e.g., `terraform.tfvars`, `production.tfvars`)
+- **Definition:** Override default values by defining them in `.tfvars` files.
+- **Usage:** Automatically loaded (`terraform.tfvars`) or passed using `-var-file`.
+
+## 3. Command-Line Flags (`-var`)
+- **Definition:** Pass variable values directly via the command line.
+- **Usage:** Use `-var` to set the values when running Terraform commands.
+
+## 4. Environment Variables (`TF_VAR_<variable_name>`)
+- **Definition:** Set variables using environment variables prefixed with `TF_VAR_`.
+- **Usage:** Automatically picked up by Terraform during execution.
+
+## 5. Auto-Loaded `.auto.tfvars` Files
+- **Definition:** Files with `.auto.tfvars` extension are automatically loaded by Terraform.
+- **Usage:** No need to explicitly pass them in commands; Terraform reads them automatically.
